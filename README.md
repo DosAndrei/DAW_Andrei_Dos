@@ -2,8 +2,10 @@
  
  ## BackEnd
  
+ 
 Developed using .NET Core 3.1 and MongoDB
 MongoDB is running on a remote cluster at: https://cloud.mongodb.com/v2/6012d85860c9163eeeba4fa6#clusters
+
 Requirements: .NET Core 3.1 installed.
 Use Visual Studio for coding.
 
@@ -12,6 +14,7 @@ To run it:
 -Using the console: Go into the folder where the .csproj file is located -> open terminal -> dotnet run -> open https://localhost:5001/api/notes
  
 ## FrontEnd
+
 
 Developed using Angular.
 

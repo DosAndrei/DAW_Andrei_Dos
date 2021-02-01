@@ -1,6 +1,6 @@
 # Proiect DAW
  
- ##BackEnd
+ ## BackEnd
  
 Developed using .NET Core 3.1 and MongoDB
 MongoDB is running on a remote cluster at: https://cloud.mongodb.com/v2/6012d85860c9163eeeba4fa6#clusters
@@ -11,7 +11,7 @@ To run it:
 -Using Visual Studio: Open the solution -> select IIS profile -> Run the project -> open https://localhost:44395/api/notes
 -Using the console: Go into the folder where the .csproj file is located -> open terminal -> dotnet run -> open https://localhost:5001/api/notes
  
-##FrontEnd
+## FrontEnd
 
 Developed using Angular.
 

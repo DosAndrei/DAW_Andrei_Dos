@@ -1,0 +1,12 @@
+<div class="filter-container">
+  <div class="filter-div" *ngFor="let category of categories">
+    <button mat-raised-button color="primary" (click)="selectCategory(category)">
+      {{ category | uppercase }}
+    </button>
+  </div>
+  <div class="filter-div">
+    <button mat-raised-button color="warn" (click)="removeFilters()">
+      {{'Remove Filter' | uppercase }}
+    </button>
+  </div>
+</div>

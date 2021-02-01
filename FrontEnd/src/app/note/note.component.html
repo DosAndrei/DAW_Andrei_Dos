@@ -1,0 +1,30 @@
+<div class="container" *ngIf="this.notes !== undefined  && this.notes.length > 0">
+  <div *ngFor="let note of notes" class="notes-card">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{ note.title }}</mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content>
+        <p>{{ note.description }}</p>
+        <p>
+          <span class="material-icons" (click)="changeStatus(note, 0)">
+            apps
+          </span>
+          <span class="material-icons" (click)="changeStatus(note, 1)">
+            build
+          </span>
+          <span class="material-icons" (click)="changeStatus(note, 2)">
+            done
+          </span>
+          <span class="material-icons right-side" (click)="removeNote(note)">
+            remove_circle
+          </span>
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+<div *ngIf="this.notes === undefined">
+  Loading...
+</div>
